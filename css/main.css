@@ -1,20 +1,15 @@
-@import 'normalize.min.css';
 :root {
   --prim-color: #eee;
   --sec-color: #343e62;
   --sec-color-1: #808aad;
- 
   --select-color:#4f5670;
   --nav-prim-color: #eee;
   --nav-sec-color: #343e62;
   --nav-hover-color:#c1cbec;
   --nav-mob-hover-color:#252629;
-
   --bg-color: #000;
-
   --font-size: 1rem;
   --line-height: 1.375;
-
   --p-margin: 1rem 0 ;
   --c-max-width: 1200px;
 }
@@ -40,18 +35,10 @@ html{
   line-height: var(--line-height); 
   /* smooth scroll */
   scroll-behavior: smooth;
-  /* no layout shift on mobile nav */
-  scrollbar-gutter: stable;
 }
 body {
 	color: var(--prim-color);
   background: var(--bg-color);
-
-}
-
-::-moz-selection {
-  background: var(--select-color);
-  text-shadow: none;
 }
 
 ::selection {
