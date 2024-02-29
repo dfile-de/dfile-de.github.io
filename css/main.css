@@ -97,19 +97,22 @@ body{
   min-height: 100vh;
   display: flex;	
   flex-direction: column;
+  
 }
 header {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 header img{
-width: 200px;
+  max-width: 90%;
+  width: 200px;
+  height: auto;
 }
 footer{
   padding: 5px;
-  display: flex;
   align-self:flex-end;
   margin-top: auto;
 }
