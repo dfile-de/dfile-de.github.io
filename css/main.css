@@ -96,6 +96,7 @@ body{
   margin: 0 auto;
   min-height: 100vh;
   display: flex;	
+  flex-direction: column;
 }
 header {
   display: flex;
@@ -105,4 +106,10 @@ header {
 }
 header img{
 width: 200px;
+}
+footer{
+  padding: 5px;
+  display: flex;
+  align-self:flex-end;
+  margin-top: auto;
 }
