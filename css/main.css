@@ -1,0 +1,121 @@
+@import 'normalize.min.css';
+:root {
+  --prim-color: #eee;
+  --sec-color: #343e62;
+  --sec-color-1: #808aad;
+ 
+  --select-color:#4f5670;
+  --nav-prim-color: #eee;
+  --nav-sec-color: #343e62;
+  --nav-hover-color:#c1cbec;
+  --nav-mob-hover-color:#252629;
+
+  --bg-color: #000;
+
+  --font-size: 1rem;
+  --line-height: 1.375;
+
+  --p-margin: 1rem 0 ;
+  --c-max-width: 1200px;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v28-latin-regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-size: var(--font-size); 
+  line-height: var(--line-height); 
+  /* smooth scroll */
+  scroll-behavior: smooth;
+  /* no layout shift on mobile nav */
+  scrollbar-gutter: stable;
+}
+body {
+	color: var(--prim-color);
+  background: var(--bg-color);
+
+}
+
+::-moz-selection {
+  background: var(--select-color);
+  text-shadow: none;
+}
+
+::selection {
+  background: var(--select-color);
+  text-shadow: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--prim-color);
+}
+
+a:hover,
+a:active {
+  color: var(--sec-color);
+  outline: none;
+}
+
+p {
+ 	margin: var(--p-margin); 
+  line-height: var(--line-height);
+}
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+/* page */
+body{
+  background: rgb(22, 20, 46);
+  background: linear-gradient(0deg, rgb(22, 20, 46) 0%, rgb(53, 64, 100) 100%); 
+}
+.container {
+  max-width: var(--c-max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;	
+}
+header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+header img{
+width: 200px;
+}
