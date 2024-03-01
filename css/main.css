@@ -98,7 +98,6 @@ body{
   display: flex;	
   height: 100vh;
   flex-direction: column;
-  
 }
 header {
   display: flex;
@@ -114,7 +113,7 @@ header img{
   height: auto;
 }
 footer{
-  padding: 5px;
+  padding: 0 20px 20px 0;
   align-self:flex-end;
   margin-top: auto;
 }
